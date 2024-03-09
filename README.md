@@ -30,18 +30,15 @@ This will load the specified PDF documents, preprocess them, set up the vector d
 
 Project Structure
 main.py: The entry point of the application, responsible for orchestrating the document loading, preprocessing, and evaluation processes.
-document_loader.py: Contains the DocumentLoader class for loading PDF documents from various sources.
-text_splitter.py: Defines the TextSplitter class for splitting documents into chunks.
-embedding_generator.py: Implements the EmbeddingGenerator class for generating embeddings from text.
-document_preprocessor.py: Provides the DocumentPreprocessor class for preprocessing documents by splitting and generating embeddings.
-faiss_vectordb.py: Contains the FAISSVectorDB class for creating and searching a vector database using FAISS.
-llama_reader.py: Implements the LlamaReader class for generating natural language answers based on the retrieved information.
-evaluation_component.py: Defines the EvaluationComponent class for evaluating the system's performance against a set of test questions.
+Data: Contains the pdf documents
+notebook: any exploration work
+src: contains data components related to loading and preprocessing PDF documents.
+model contains implementation related to LLaMa model
+pipeline contains details related to langchain QA 
+evaluation component defines the EvaluationComponent class for evaluating the system's performance against a set of test questions.
 logger.py: Contains a singleton Logger class for consistent logging throughout the application.
-Configuration
-The application can be configured by modifying the clients dictionary in main.py. Each client should have the following keys:
+Configuration for any configuration of model or files.
 
-input_path: The path to the folder containing the PDF documents for the client.
 
 
 ## Hardware Requirements
