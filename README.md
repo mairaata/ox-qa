@@ -18,17 +18,13 @@ cd document-qa-system
 3. ## Usage
 
 1. Mount your Google Drive in the Colab environment:
-
-```python
-from google.colab import drive
-drive.mount('/content/gdrive', force_remount=True)
 2. Update the clients dictionary in main.py with the appropriate file paths and client details.
 3. Run the main.py script: python main.py
 
 
 This will load the specified PDF documents, preprocess them, set up the vector database, and run the evaluation process for each configured client.
 
-Project Structure
+## Project Structure
 main.py: The entry point of the application, responsible for orchestrating the document loading, preprocessing, and evaluation processes.
 Data: Contains the pdf documents
 notebook: any exploration work
@@ -40,10 +36,9 @@ logger.py: Contains a singleton Logger class for consistent logging throughout t
 Configuration for any configuration of model or files.
 
 
-
 ## Hardware Requirements
 
-This project utilizes the LLaMA  LLaMA is a computationally intensive model, and running it effectively may require a GPU (Graphics Processing Unit) with sufficient memory and computing power.
+This project utilizes the LLaMA  LLaMA is a computationally intensive model, and running it effectively may require a GPU with sufficient memory and computing power.
 
 
 
